@@ -7,9 +7,118 @@
     <title>Figuras Geométricas</title>
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
+    <header>
+        <h1>
+          Figuras geométricas
+        </h1>
+        <p>Calculadora de figuras geométricas</p>
+      </header>
 
 
+      <!-- Sección donde va el formulario -->
+      <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form>
+          <label for="InputCuadrado">
+            Escribe cuánto mide cada lado de tu cuadrado:
+          </label>
+          <input id="InputCuadrado" type="number" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el perímetro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+          </button>
+        </form>
+      </section>
+
+
+      <section>
+        <h2>Calcula el área y perímetro de un circulo</h3>
+        <form>
+          <label for="InputCirculo">
+            Escribe cuánto mide cada lado de tu circulo:
+          </label>
+          <input id="InputCirculo" type="number" />
+          <button type="button" onclick="calcularPerimetroCirculo()">
+            Calcular el perímetro
+          </button>
+          <button type="button" onclick="calcularAreaCirculo()">
+            Calcular el área
+          </button>
+        </form>
+      </section>
+
+
+
+      <section class="section__triangle">
+        <h2>Triángulo</h2>
+
+        <form>
+            <p>Escribe los datos del triángulo</p>
+
+            <div>
+                <!-- Primer lado -->
+                <label for="inputTriangulo1">
+                    Lado 1
+                </label>
+                
+                <input id="inputTriangulo1" type="number">
+            </div>
+
+            <div>
+                <!-- Segundo lado -->
+                <label for="inputTriangulo2">
+                    Lado 2
+                </label>
+    
+                <input id="inputTriangulo2" type="number">
+            </div>
+            
+            <div>
+                <!-- Tercer lado -->
+                <label for="inputTriangulo3">
+                    Base
+                </label>
+    
+                <input id="inputTriangulo3" type="number">
+            </div>
+
+            <div>
+                <!-- Cuarto lado -->
+                <label for="inputTriangulo4">
+                    Altura
+                </label>
+    
+                <input id="inputTriangulo4" type="number">
+            </div>
+
+            <div>
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perímetro
+                </button>
+    
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+            </div>
+        </form>
+    </section>
+
+
+    <div>
+      <h2>Triangulo Isósceles</h2>
+      <p>Recuerda: los lados deben ser iguales para que se puedan calcular</p>
+      <form>
+          <label for="isoLado1">Ingresa el tamaño del primer lado</label>
+          <input name="isoLado1" id="isoLado1" type="number">
+          <label for="isoLado2">Ingresa el tamaño del segundo lado</label>
+          <input name="isoLado2" id="isoLado2" type="number">
+          <label for="isoBase">Ingresa el tamaño de la base</label>
+          <input name="isoBase" id="isoBase" type="number">
+          <button type="button" onclick="trianguloIso()">Calcular</button>
+      </form>
+  </div>
 
     <script src="figuras.js"></script>
 </body>
